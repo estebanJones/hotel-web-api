@@ -18,7 +18,6 @@ import dev.hotel.repository.ClientRepository;
 public class ClientService {
 	@Autowired
 	static ClientRepository clientRepo;
-	
 
 	public List<Client> listerClient(int start, int size) {
 		Pageable page = PageRequest.of(start, size);
